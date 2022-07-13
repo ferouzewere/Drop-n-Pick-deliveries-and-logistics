@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hello, world!</title>
+
+    <link href="img/favicon.png" rel="shortcut icon">
+    
+    <!-- Google Fonts - Poppins, Karla -->
+    <link href="../css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="../css-1?family=Karla:300,400,500,600,700" rel="stylesheet">
+    
+    <!-- Font Awesome CSS -->
+    <link href="vendor/fontawesome/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom Font Icons -->
+    <link href="vendor/icomoon/css/iconfont.min.css" rel="stylesheet">
+    
+    <!-- Vendor CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/animate/css/animate.min.css" rel="stylesheet">
+    <link href="vendor/dmenu/css/menu.css" rel="stylesheet">
+    <link href="vendor/hamburgers/css/hamburgers.min.css" rel="stylesheet">
+    <link href="vendor/mmenu/css/mmenu.min.css" rel="stylesheet">
+    <link href="vendor/range-slider/css/ion.rangeSlider.css" rel="stylesheet">
+    <link href="vendor/magnific-popup/css/magnific-popup.css" rel="stylesheet">
+    <link href="vendor/float-labels/css/float-labels.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Main CSS -->
+    <link href="css/style - Copy.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <!-- Order  -->
+        <div class="order">
+            <div class="container">
+                <!-- Form -->
+                <form method="POST" id="orderForm" name="orderForm" action="php/send_order_1_attached_pdf.php">
+                    <div class="row">
+                        <div class="col-lg-8" id="mainContent">
+                            <!-- Calculator Area -->
+                            <div id="optionGroup1" class="row option-box">
+                                <div class="ribbon-left"><span class="left">Popular</span></div>
+                                <span class="price-box-desc">From</span>
+                                <div class="price-box"><sup>$</sup>2.50</div>
+                                <div class="option-box-header">
+                                    <h3>Option Group 1</h3>
+                                    <p>
+                                        Subtitle or short description can be set here.
+                                        <a href="javascript:;" id="openGallery1" class="option-box-link">Gallery</a>
+                                    </p>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <input type="hidden" id="option1Title" name="option1Title" value="Select">
+                                    <input type="hidden" id="option1Price" name="option1Price" value="0">
+                                    <select id="optionGroup1List" class="wide price-list" name="optionGroup1List">
+                                        <option value="0">Select</option>
+                                        <option value="1025.64">Option 1.1</option>
+                                        <option value="30.45">Option 1.2</option>
+                                        <option value="2.50">Option 1.3</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <input id="optionGroup1RangeSlider" type="text" value="">
+                                        </div>
+                                        <div class="col-4">
+                                            <input id="optionGroup1Qty" type="text" class="qty-input form-control"
+                                                name="optionGroup1Qty" value="0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="optionGroup2" class="row option-box">
+                                <span class="price-box-desc">From</span>
+                                <div class="price-box"><sup>$</sup>2.20</div>
+                                <div class="option-box-header">
+                                    <h3>Option Group 2</h3>
+                                    <p>Subtitle or short description can be set here.</p>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <input type="hidden" id="option2Title" name="option2Title" value="Select">
+                                    <input type="hidden" id="option2Price" name="option2Price" value="0">
+                                    <select id="optionGroup2List" class="wide price-list" name="optionGroup2List">
+                                        <option value="0">Select</option>
+                                        <option value="1039.63">Option 2.1</option>
+                                        <option value="31.95">Option 2.2</option>
+                                        <option value="2.20">Option 2.3</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <input id="optionGroup2RangeSlider" type="text" value="">
+                                        </div>
+                                        <div class="col-4">
+                                            <input id="optionGroup2Qty" type="text" class="qty-input form-control"
+                                                name="optionGroup2Qty" value="0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="optionGroup3" class="row option-box">
+                                <span class="price-box-desc">From</span>
+                                <div class="price-box"><sup>$</sup>4.20</div>
+                                <div class="option-box-header">
+                                    <h3>Option Group 3</h3>
+                                    <p>Subtitle or short description can be set here.</p>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <input type="hidden" id="option3Title" name="option3Title" value="Select">
+                                    <input type="hidden" id="option3Price" name="option3Price" value="0">
+                                    <select id="optionGroup3List" class="wide price-list" name="optionGroup3List">
+                                        <option value="0">Select</option>
+                                        <option value="1099.63">Option 3.1</option>
+                                        <option value="11.95">Option 3.2</option>
+                                        <option value="4.20">Option 3.3</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <input id="optionGroup3RangeSlider" type="text" value="">
+                                        </div>
+                                        <div class="col-4">
+                                            <input id="optionGroup3Qty" type="text" class="qty-input form-control"
+                                                name="optionGroup3Qty" value="0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="extraOptionGroup1" class="row option-box">
+                                <div class="price-box"><sup>$</sup>50</div>
+                                <div class="option-box-header">
+                                    <h3>Extra Option 1</h3>
+                                    <p>Subtitle or short description can be set here.</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12">
+                                    <input type="hidden" name="extraOption1Title" value="Extra Option 1">
+                                    <input type="checkbox" id="extraOption1" class="inp-cbx" name="extraOption1"
+                                        value="50.00">
+                                    <label class="cbx" for="extraOption1">
+                                        <span>
+                                            <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                            </svg>
+                                        </span>
+                                        <span id="extraOption1Title">Extra Option 1</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div id="extraOptionGroup2" class="row option-box">
+                                <div class="price-box"><sup>$</sup>70</div>
+                                <div class="option-box-header">
+                                    <h3>Extra Option 2</h3>
+                                    <p>Subtitle or short description can be set here.</p>
+                                </div>
+                                <div class="col-md-12 col-sm-12">
+                                    <input type="hidden" name="extraOption2Title" value="Extra Option 2">
+                                    <input type="checkbox" id="extraOption2" class="inp-cbx" name="extraOption2"
+                                        value="70.00">
+                                    <label class="cbx" for="extraOption2">
+                                        <span>
+                                            <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                            </svg>
+                                        </span>
+                                        <span id="extraOption2Title">Extra Option 2</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- Calculator Area End -->
+                            <!-- Personal Details -->
+                            <div id="personalDetails" class="row contact-box">
+                                <div class="contact-box-header">
+                                    <h3>Contact Details</h3>
+                                    <p>Please give VALID email to check the result.</p>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="userName">Full Name</label>
+                                        <input id="userName" class="form-control" name="username" type="text"
+                                            data-parsley-pattern="^[a-zA-Z\s.]+$" required="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input id="email" class="form-control" name="email" type="email" required="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="phone">Phone e.g.: +12345</label>
+                                        <input id="phone" class="form-control" name="phone" type="text"
+                                            data-parsley-pattern="^\+{1}[0-9]+$">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="address">Address</label>
+                                        <input id="address" class="form-control" name="address" type="text"
+                                            data-parsley-pattern="^[,.a-zA-Z0-9\s.]+$">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="inputMessage">Message</label>
+                                        <textarea class="form-control" id="inputMessage" name="message"
+                                            data-parsley-pattern="^[a-zA-Z0-9\s.:,!?']+$"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Personal Details End -->
+                        </div>
+                        <div class="col-lg-4" id="sidebar">
+                            <!-- Order Container -->
+                            <div id="orderContainer" class="theiaStickySidebar">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <input type="hidden" id="subSum1" name="subSum1" value="0">
+                                        <input type="hidden" id="subSum2" name="subSum2" value="0">
+                                        <input type="hidden" id="subSum3" name="subSum3" value="0">
+                                        <input type="hidden" id="totalDue" name="totalDue" value="0">
+                                        <h3>Order Summary</h3>
+                                        <ul id="orderSumList">
+                                            <li id="optionGroup1Sum"></li>
+                                            <li id="optionGroup2Sum"></li>
+                                            <li id="optionGroup3Sum"></li>
+                                            <li id="extraOption1Sum"></li>
+                                            <li id="extraOption2Sum"></li>
+                                        </ul>
+                                        <div class="row total-container">
+                                            <div class="col-6 p-0">
+                                                <input type="text" id="totalTitle" class="summaryInput" name="totallabel"
+                                                    value="" disabled="">
+                                            </div>
+                                            <div class="col-6 p-0">
+                                                <input type="text" id="total" class="summaryInput" name="total" value="0"
+                                                    data-parsley-errors-container="#totalError" data-parsley-empty-order=""
+                                                    disabled="">
+                                            </div>
+                                        </div>
+                                        <div id="totalError"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="checkbox" id="cbx" class="inp-cbx" name="terms" value="yes"
+                                                required="">
+                                            <label class="cbx terms" for="cbx">
+                                                <span>
+                                                    <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                                    </svg>
+                                                </span>
+                                                <span>Accept<a href="pdf/terms.pdf" class="terms-link"
+                                                        target="_blank">Terms</a>.</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <button type="submit" name="submit" class="btn-form-func">
+                                            <span class="btn-form-func-content">SUBMIT</span>
+                                            <span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <button type="button" name="reset" id="resetBtn"
+                                            class="btn-form-func btn-form-func-alt-color">
+                                            <span class="btn-form-func-content">RESET</span>
+                                            <span class="icon"><i class="fa fa-times" aria-hidden="true"></i></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row footer">
+                                    <div class="col-lg-12 text-center">
+                                        <small>&copy; 2020 Your Company.</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Order Container End -->
+                        </div>
+                    </div>
+                </form>
+                <!-- Form End -->
+            </div>
+        </div>
+        <!-- Order End -->
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
