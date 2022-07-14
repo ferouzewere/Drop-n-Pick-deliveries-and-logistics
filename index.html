@@ -213,35 +213,41 @@
         <br>
         <hr>
         <!-- beginning of contact page -->
-        <div class="container-fluid col-md-12 align-items-center justify-content-center" id="5">
-            <form class="needs-validation col-lg-6 col-md-12" novalidate>
-                <div class="header mt-5">
-                    <h1 style="font-weight:bold;">Send Us a Message</h1>
+        <div class="container-fluid" id="5">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <form class="needs-validation" novalidate>
+                        <div class="header mt-5">
+                            <h1 style="font-weight:bold;">Send Us a Message</h1>
+                        </div>
+                        <div class="input-group" data-validate="Valid email is required: ex@abc.xyz">
+                            <input id="email" class="form-control" type="text" name="email" placeholder="Your Email Address">
+                            <span class="focus-input100"></span>
+                        </div>
+                        <br>
+                        <div class="form-outline" data-validate="Please choose an option">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Type of Message</option>
+                                <option value="1">General</option>
+                                <option value="2">Inquiry</option>
+                                <option value="3">Complaint</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="form-outline" data-validate="Message is required">
+                            <textarea class="form-control" id="textAreaExample1" rows="10" placeholder="How can we help?"></textarea>
+                            <span class="focus-input100"></span>
+                        </div>
+                        <br>
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                        <br>
+                    </form>
                 </div>
-                <div class="input-group" data-validate="Valid email is required: ex@abc.xyz">
-                    <input id="email" class="form-control" type="text" name="email" placeholder="Your Email Address">
-                    <span class="focus-input100"></span>
-                </div>
-                <br>
-                <div class="form-outline" data-validate="Please choose an option">
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Type of Message</option>
-                        <option value="1">General</option>
-                        <option value="2">Inquiry</option>
-                        <option value="3">Complaint</option>
-                    </select>
-                </div>
-                <br>
-                <div class="form-outline" data-validate="Message is required">
-                    <textarea class="form-control" id="textAreaExample1" rows="10" placeholder="How can we help?"></textarea>
-                    <span class="focus-input100"></span>
-                </div>
-                <br>
-                <div class="col-12">
-                    <button class="btn btn-primary" type="submit">Submit form</button>
-                </div>
-                <br>
-            </form>
+                <div class="col-md-3"></div>
+            </div>
         </div>
         <hr>
         <!-- end of contact page -->
