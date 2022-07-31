@@ -126,7 +126,7 @@ img {
   content: "";
   width: 0;
   height: 2px;
-  background: #6d7f52;
+  background: #0E5BFF;
   position: absolute;
   left: -68px;
   top: 5px;
@@ -134,11 +134,11 @@ img {
 }
 
 .wizard>.steps li.first a {
-  background: #6d7f52;
+  background: #0E5BFF;
 }
 
 .wizard>.steps li.checked a {
-  background: #6d7f52;
+  background: #0E5BFF;
 }
 
 .wizard>.steps li.checked a:after {
@@ -191,7 +191,7 @@ img {
 h3 {
   font-family: "Muli-SemiBold";
   font-size: 22px;
-  color: #453e79;
+  color: #0E5BFF;
   text-transform: uppercase;
   letter-spacing: 7px;
   padding: 5px 15px;
@@ -203,7 +203,7 @@ h3 {
 p {
   font-family: "Muli-SemiBold";
   font-size: 20px;
-  color: #6d7f52;
+  color: black;
   text-align: center;
   margin-bottom: 26px;
 }
@@ -258,7 +258,7 @@ p {
   width: 100%;
   background: #fff;
   z-index: 9;
-  border: 1px solid #81acee;
+  border: 1px solid #0E5BFF;
 }
 
 .select .dropdown li {
@@ -266,7 +266,7 @@ p {
 }
 
 .select .dropdown li:hover {
-  background: #81acee;
+  background: #0E5BFF;
   color: #fff;
 }
 
@@ -286,7 +286,7 @@ p {
   border: none;
   border-bottom: 2px solid #e6e6e6;
   width: 100%;
-  color: #666;
+  color: #0E5BFF;
 }
 
 .form-control:focus {
@@ -344,7 +344,7 @@ textarea.form-control {
   align-items: center;
   background: #e9e0cf;
   font-family: "Muli-SemiBold";
-  color: #666;
+  color: white;
   cursor: pointer;
   position: relative;
   padding-left: 28px;
@@ -387,7 +387,7 @@ textarea.form-control {
 }
 
 .actions li:last-child a:hover {
-  background: #849963;
+  background: #0E5BFF;
 }
 
 .actions li:last-child a:before {
@@ -404,12 +404,12 @@ textarea.form-control {
 }
 
 .actions li[aria-disabled="false"]~li a {
-  background: #6d7f52;
+  background: #0E5BFF;
   color: #fff;
 }
 
 .actions li[aria-disabled="false"]~li a:hover {
-  background: #849963;
+  background:#0E5BFF;
 }
 
 .checkbox-tick label {
@@ -502,7 +502,7 @@ textarea.form-control {
   height: 13px;
   width: 13px;
   border-radius: 50%;
-  border: 1px solid #999;
+  border: 1px solid #0E5BFF;
 }
 
 .checkbox-circle .checkmark:after {
@@ -512,7 +512,7 @@ textarea.form-control {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #999;
+  background: #0E5BFF;
   position: absolute;
   display: none;
 }
