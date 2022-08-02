@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition-duration: 100ms;
 }
 
 html{
@@ -165,39 +164,37 @@ h2 {
 }
 
 /* start of pricing page styling */
+.card1, .card2, .card3 {
+    border-radius: 20px;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+}
 
 .card1:hover {
     background: #0E5BFF;
-    border: 1px solid #00ffb6;
-}
-
-.card1:hover .list-group-item {
-    background: #00ffb6 !important
+    /* border: 1px solid #00ffb6; */
+    transition-duration: 150ms;
+    transform: scale(1.05);
 }
 
 .card2:hover {
     background: #EA5858;
-    border: 1px solid #00C9FF;
+    /* border: 1px solid #00C9FF; */
+    transition-duration: 150ms;
+    transform: scale(1.05);
 }
-
-.card2:hover .list-group-item {
-    background: #00C9FF !important
-}
-
 
 .card3:hover {
     background: #FF9100;
-    border: 1px solid #ff95e9;
+    /* border: 1px solid #ff95e9; */
+    transition-duration: 150ms;
+    transform: scale(1.05);
 }
-
-.card3:hover .list-group-item {
-    background: #ff95e9 !important
-}
-
 
 .card:hover .btn-outline-dark {
     color: white;
     background: #212529;
+    transition-duration: 150ms;
+    transform: scale(1.05);
 }
 
 /* end of pricing page styling */
@@ -213,4 +210,5 @@ h2 {
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
 }
