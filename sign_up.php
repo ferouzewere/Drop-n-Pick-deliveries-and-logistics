@@ -1,0 +1,102 @@
+<?php
+
+@include 'connect.php';
+
+if(isset($_POST['submit'])){
+
+	$fullName = mysqli_real_escape_string($conn, $_POST['fullName']);
+	$pNum = mysqli_real_escape_string($conn, $_POST['pNum']);
+	$email = mysqli_real_escape_string($conn, $_POST['email']);
+	$password1 = mysqli_real_escape_string($conn, $_POST['password1']);
+	$password2 = mysqli_real_escape_string($conn, $_POST['password2']);
+
+	$select = "SELECT * FROM `registration` WHERE email = '$email' && password = '$password1' ";
+
+	$result = mysqli_query($conn, $select);
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Log In</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+	<!-- STYLE CSS -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="/sign_up/css/log_in.css">
+</head>
+
+<body>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+		<div class="container-fluid">
+			<span class="navbar-brand mb-0 h1">
+				<a class="navbar-brand" href="/index.html">Drop n Pick</a>
+			</span>
+			<a href="/index.html">
+				<img src="/icons/icons8_home_96px.png" alt="" width="40px">
+			</a>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="card">
+				<div class=""></div>
+				<div class="">
+					<form name="frmRegistration" class="needs-validation" action="connect.php" method="POST"  novalidate>
+						<div class="d-flex justify-content-center">
+							<h4>Sign UP</h4>
+						</div>
+						<br>
+						<div>
+							<input class="form-control" type="text" placeholder="Enter full name" id="fullName" name="fullName">
+							<br>
+						</div>
+						<div class="row">
+							<div class="col-6">
+								<input class="form-control" type="text" placeholder="Enter phone number" id="pNnum" name="pNum">
+							</div>
+							<div class="col-6">
+								<input id="email" class="form-control" type="email" name="email"
+									placeholder="Your Email Address" itemid="email">
+							</div>
+						</div>
+						<br>
+
+						<div>
+							<input class="form-control" type="password" placeholder="Choose Password" id="password1" name="password1" >
+							<br>
+						</div>
+
+						<div>
+							<input class="form-control" type="password" placeholder="Confirm Password" id="password2" name="password2">
+							<br>
+						</div>
+						
+						<div class="">
+							<input class="btn form-btn btn-success w-100" form="frmRegistration" type="submit" name="submit" value="submit">
+						</div>
+
+						<div class="form">
+							<label class=" d-flex justify-content-center" for="">
+								<p style="font-size:15px;">Have an account already? <a href="log_in.html"> Log In</a>
+									here
+								</p>
+							</label>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-0 col-lg-2"></div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
