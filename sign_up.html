@@ -1,22 +1,3 @@
-<?php
-
-@include 'connect.php';
-
-if(isset($_POST['submit'])){
-
-	$fullName = mysqli_real_escape_string($conn, $_POST['fullName']);
-	$pNum = mysqli_real_escape_string($conn, $_POST['pNum']);
-	$email = mysqli_real_escape_string($conn, $_POST['email']);
-	$password1 = mysqli_real_escape_string($conn, $_POST['password1']);
-	$password2 = mysqli_real_escape_string($conn, $_POST['password2']);
-
-	$select = "SELECT * FROM `registration` WHERE email = '$email' && password = '$password1' ";
-
-	$result = mysqli_query($conn, $select);
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 

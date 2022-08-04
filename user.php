@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
 
 </head>
@@ -26,30 +25,20 @@
     <div id="first">
         <div class="container d-flex align-items-center justify-content-center text-center h-100">
             <div class="">
-                <h4 class="text-white">Hi there!<label for=""></label></h4>
-                <h2 class="text-white fw-bold pb-3">Select your nearest Drop n Pick Station</h2>
+                <!-- <h4 class="text-white">Hi there!<label for=""></label></h4> -->
+                <h2 class="text-white fw-bold pb-3 w-100">Enter 'Dropper's' full details here</h2>
                 <br>
                 <div class="card">
                     <div class="row g-0">
                         <div class="col-md-12">
-                            <div class="card-body h-100"
-                                style="background-color:white; opacity: 0.9; border-radius: 20px;">
+                            <div class="card-body h-100" style="background-color:white; opacity: 0.9; border-radius: 20px;">
                                 <br>
                                 <div>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>County</option>
-                                        <option value="1">Nairob</option>
-                                        <option value="2">Nyeri</option>
-                                        <option value="3">Kajiado</option>
-                                    </select><br>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Area</option>
-                                        <option value="1">CBD</option>
-                                        <option value="2">Rongai</option>
-                                        <option value="3">Donholm</option>
-                                    </select>
-                                    <br>
-                                    <label class="h-5" for="station">Picked station will appear here</label>
+                                    <form class="needs-validation" novalidate mehtod="POST">
+                                        <input type="text" class="form-control" id="" placeholder="Enter 'Droppers' full name" required>
+                                        <br>
+                                        <input type="text" class="form-control" id="" placeholder="Enter phone number" required>
+                                        <br>
                                 </div>
                             </div>
                         </div>
@@ -68,27 +57,25 @@
                 <br>
                 <div class="row">
                     <div class="align-items-center justify-content-center">
-                        <form class="needs-validation" novalidate>
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <label for="firstName">Recepient's First name</label>
-                                    <input type="text" class="form-control" id="firstName" placeholder="" value=""
-                                        required>
-                                    <div class="invalid-feedback">
-                                        Valid first name is required.
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="lastName">Last name</label>
-                                    <input type="text" class="form-control" id="lastName" placeholder="" value=""
-                                        required>
-                                    <div class="invalid-feedback">
-                                        Valid last name is required.
-                                    </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName">Recepient's First name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid first name is required.
                                 </div>
                             </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName">Last name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid last name is required.
+                                </div>
+                            </div>
+                        </div>
 
-                            <!-- <div class="mb-3">
+                        <!-- <div class="mb-3">
                                     <label for="username">Username</label>
                                     <div class="input-group">
                                         <div class="input-group-prepend">
@@ -101,7 +88,7 @@
                                     </div>
                                 </div> -->
 
-                            <!-- <div class="mb-3">
+                        <!-- <div class="mb-3">
                                     <label for="email">Email <span class="text-muted">(Optional)</span></label>
                                     <input type="email" class="form-control" id="email" placeholder="you@example.com">
                                     <div class="invalid-feedback">
@@ -109,28 +96,28 @@
                                     </div>
                                 </div> -->
 
-                            <div class="mb-3">
-                                <label for="address">Recepient's Phone Number</label>
-                                <input type="text" class="form-control" id="" placeholder="Enter phone number" required>
+                        <div class="mb-3">
+                            <label for="address">Recepient's Phone Number</label>
+                            <input type="text" class="form-control" id="" placeholder="Enter phone number" required>
+                            <div class="invalid-feedback">
+                                Please enter recepient's phone number.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="address2">Short description of Parcel</label>
+                            <input type="text" class="form-control" id="address2" placeholder="Description">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="country">Weight (in Kg)</label>
+                                <input class="d-block w-100 form-control" id="weight" type="number" required>
                                 <div class="invalid-feedback">
-                                    Please enter recepient's phone number.
+                                    Please select a valid country.
                                 </div>
                             </div>
-
-                            <div class="mb-3">
-                                <label for="address2">Short description of Parcel</label>
-                                <input type="text" class="form-control" id="address2" placeholder="Description">
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <label for="country">Weight (in Kg)</label>
-                                    <input class="d-block w-100 form-control" id="weight" type="number" required>
-                                    <div class="invalid-feedback">
-                                        Please select a valid country.
-                                    </div>
-                                </div>
-                                <!-- <div class="col-md-6 mb-3">
+                            <!-- <div class="col-md-6 mb-3">
                                         <label for="state">State</label>
                                         <select class="custom-select d-block w-100" id="state" required>
                                             <option value="">Choose...</option>
@@ -140,9 +127,9 @@
                                             Please provide a valid state.
                                         </div>
                                     </div> -->
-                            </div>
+                        </div>
 
-                            <hr class="mb-4">
+                        <hr class="mb-4">
 
                         </form>
                     </div>
@@ -157,7 +144,7 @@
                         </ul>
                     </footer> -->
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12">
+            <hbndiv class="col-lg-4 col-md-4 col-sm-12">
                 <br>
                 <div class="">
                     <h4 class="d-flex justify-content-between align-items-center mb-3">
@@ -192,7 +179,7 @@
                                 <span class="text-muted">Ksh. 250</span>
                             </label>
                         </li>
-                        <li class="list-group-item d-flex justify-content-between bg-light">
+                        <!-- <li class="list-group-item d-flex justify-content-between bg-light">
                             <div class="text-success">
                                 <h6 class="my-0">Promo code</h6>
                                 <label for="">
@@ -200,8 +187,8 @@
                                 </label>
                             </div>
                             <span class="text-success">-</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between">
+                        </li> -->
+                        <li class="list-group-item d-flex justify-content-between" style="color: white; background-color: green;">
                             <span>Total (KES)</span>
                             <label for="">
                                 <strong>Ksh. 250</strong>
@@ -209,14 +196,14 @@
                         </li>
                     </ul>
 
-                    <form class="card p-2">
+                    <!-- <form class="card p-2">
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Promo code">
                             <div class="input-group-append">
                                 <button type="submit" class="btn btn-secondary">Redeem</button>
                             </div>
                         </div>
-                    </form>
+                    </form> -->
                 </div>
 
             </div>
@@ -239,6 +226,7 @@
             </div>
             <div class="">
                 <button class="btn btn-primary btn-md btn-block w-25" type="submit">Checkout</button>
+
             </div>
         </div>
     </div>
@@ -254,9 +242,7 @@
         </ul>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 
 </html>
